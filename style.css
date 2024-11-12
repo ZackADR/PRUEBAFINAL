@@ -1,0 +1,238 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #e27f3c;
+    --secundario: #465f98;
+    --gris: #757575;
+    --fuente-principal: 2.5rem;
+    --grisClaro: #dfe9f3;
+    --letras: #e9c8b2;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+body {
+    font-size: 16px;
+    /* ahora 1rem equivale a 10px*/
+    margin: 0;
+    background-image: url(img/Fondo_Body.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter:brightness(55%);
+    
+}
+
+.header {
+    top: 0;
+    background-image: url(img/Fondo_Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header img {
+    height: 40rem;
+    border-radius: 50%;
+    margin: 10rem 0 10rem 0;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-principal a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+    box-shadow: 2px 18px 20px 5px rgba(0, 0, 0, 0.68);
+    border-radius: 5px;
+}
+
+.nav-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-eslogan h1 {
+    font-size: 13rem;
+    color: var(--grisClaro);
+}
+
+.contenedor-eslogan p {
+    font-size: 3.8rem;
+    color: var(--grisClaro);
+    margin-right: 20%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenedor-autos {
+    margin-top: 2rem;
+    background-color: var(--blanco);
+    border-radius: 5px;
+}
+
+.contenedor-autos h2 {
+    color: var(--secundario);
+    text-align: center;
+
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blanco);
+    padding: 1rem;
+    box-shadow: 2px 18px 20px 5px rgba(0, 0, 0, 0.68);
+    margin-bottom: 10%;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 80%);
+}
+
+@media (min-width: 768px) {
+    .fila {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.fila .auto .imagen-auto {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.fila .auto .texto-auto {
+    font-weight: bold;
+    margin-top: 0px;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    border-radius: 15px;
+    text-align: center;
+    padding: .5rem;
+}
+
+.contenedor-comparativo {
+    background-color: var(--blanco);
+    padding-bottom: 1rem;
+    margin-bottom: 10%;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 40%);
+    box-shadow: 2px 18px 20px 5px rgba(0, 0, 0, 0.68);
+}
+
+.img-enfrentadas {
+    display: flex;
+}
+
+.img-enfrentadas img {
+    width: 50%;
+}
+
+.texto-comparativo {
+    font-size: var(--fuente-principal);
+    line-height: 3.5rem;
+    color: var(--secundario);
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.texto-comparativo a {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    text-decoration: none;
+    color: var(--secundario);
+}
+
+.texto-comparativo a:hover {
+    color: var(--primario);
+}
+
+.contenedor-img-link {
+    box-shadow: 2px 18px 20px 5px rgba(0, 0, 0, 0.68);
+    margin-bottom: 10%;
+}
+
+.contenedor-img-link a {
+    width: 50%;
+    display: inline-block;
+}
+
+.contenedor-img-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedos-marcas {
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
+    padding: 2rem;
+}
+
+.contenedos-marcas h2 {
+    text-align: center;
+    color: var(--secundario);
+}
+
+.marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .marcas {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.logo {
+    margin: 3rem;
+    box-shadow: 2px 18px 20px 5px rgba(0, 0, 0, 0.68);
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 80%);
+}
+
+.logo img {
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+}
+
+.footer {
+    padding: 1rem;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 80%);
+    text-align: center;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+}
